@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hisaab.MainActivity">
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+
+        android:text="Who Paid"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/radioButtonSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMani"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:text="M"
+            android:textSize="@dimen/radioButtonSize" />
+
+
+
+        <RadioButton
+            android:id="@+id/rbPani"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="P"
+            android:textSize="@dimen/radioButtonSize" />
+
+        <RadioButton
+            android:id="@+id/rbLali"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="L"
+            android:textSize="@dimen/radioButtonSize" />
+
+        <RadioButton
+            android:id="@+id/rbSani"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="S"
+            android:textSize="@dimen/radioButtonSize" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Amount"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/radioButtonSize" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="0"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:textSize="@dimen/radioButtonSize" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Paid To:-"
+        android:textSize="@dimen/radioButtonSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/cbManinder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="M"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/radioButtonSize" />
+
+        <CheckBox
+            android:id="@+id/cbPawan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="P"
+            android:textSize="@dimen/radioButtonSize" />
+
+        <CheckBox
+            android:id="@+id/cbLalit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="L"
+            android:textSize="@dimen/radioButtonSize" />
+
+        <CheckBox
+            android:id="@+id/cbSandeep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="S"
+            android:textSize="@dimen/radioButtonSize" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/bSave"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="46dp"
+        android:text="Save"
+        android:onClick="save"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/radioButtonSize" />
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
